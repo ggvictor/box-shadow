@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Shadow</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/scripts.js" defer></script>
+</head>
+<body>
+    <div id="box-shadow-generator">
+        <div id="controls-containers">
+            <h2>Configurações da Box Shadow</h2>
+            <div class="form-control">
+                <div class="range-input">
+                    <label for="horizontal">Deslocamento Horizintal:</label>
+                    <input type="range" name="horizontal" id="horizontal" min="-100" max="100" value="5">
+                </div>
+                <div class="reference-input">
+                    <input type="text" name="horizontal-value" id="horizontal-value">
+                    <p>PX</p>
+                </div>
+            </div>
+            <div class="form-control">
+                <div class="range-input">
+                    <label for="vertical">Deslocamento Vertical:</label>
+                    <input type="range" name="vertical" id="vertical" min="-100" max="100" value="5">
+                </div>
+                <div class="reference-input">
+                    <input type="text" name="vertical-value" id="vertical-value">
+                    <p>PX</p>
+                </div>
+            </div>
+            <div class="form-control">
+                <div class="range-input">
+                    <label for="blur">Intensidade do borrão (Blur):</label>
+                    <input type="range" name="blur" id="blur" min="0" max="100" value="10">
+                </div>
+                <div class="reference-input">
+                    <input type="text" name="blur-value" id="blur-value">
+                    <p>PX</p>
+                </div>
+            </div>
+            <div class="form-control">
+                <div class="range-input">
+                    <label for="spread">Intensidade do Espalhamento (Spread):</label>
+                    <input type="range" name="spread" id="spread" min="-100" max="100" value="3">
+                </div>
+                <div class="reference-input">
+                    <input type="text" name="spread-value" id="spread-value">
+                    <p>PX</p>
+                </div>
+            </div>
+        </div>
+        <div id="preview">
+            <h2>Preview do efeito gerado:</h2>
+            <div id="box"></div>
+        </div>
+    </div>
+    <div id="generated-rule">
+        <h2>Copie e Cole no seu arquivo de CSS:</h2>
+        <div id="rules-area">
+            <p id="rule">box-shadow <span></span></p>
+            <p id="web-kit-rule">-web-kit-box-shadow <span></span></p>
+            <p id="moz-rule">-moz-box-shadow <span></span></p>
+        </div>
+    </div>
+</body>
+</html>
